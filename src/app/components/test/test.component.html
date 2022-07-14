@@ -1,0 +1,23 @@
+<p>{{singlePet.name | uppercase}}</p>
+<p>{{singlePet.breed}}</p>
+
+<p>{{ singlePet.price | currency }}</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Breed</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+        <tr *ngFor="let pet of pets; let i = index">
+            <td>({{i}}) {{pet.name}}</td>
+            <td>{{pet.breed}}</td>
+        </tr>
+        <br>
+        <tr *ngFor="let pet of pets; let i = index">
+            <td>({{i}}) {{pet.name}}</td>
+            <td>{{pet.breed}}</td>
+        </tr>
+</table>
